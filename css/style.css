@@ -1,5 +1,6 @@
 :root {
   --violet: #231a6f;
+  --violet-dark: #00204a;
   --blue: #007bff;
   --blue-light: #00bbf0;
   --indigo: #6610f2;
@@ -74,6 +75,9 @@ li {
 .mb-8px {
   margin-bottom: 8px;
 }
+.mb-40px{
+  margin-bottom: 40px;
+}
 
 .mt-45px {
   margin-top: 45px;
@@ -97,7 +101,6 @@ li {
 
 .btn-first:hover {
   opacity: 70%;
-
 }
 
 .text-blue-light {
@@ -106,6 +109,12 @@ li {
 
 .flex {
   display: flex;
+}
+.text-center{
+  text-align: center;
+}
+.title-h2-left{
+  font-weight: 600;
 }
 
 /* Header */
@@ -116,7 +125,12 @@ li {
   align-items: center;
   color: white;
   height: 76px;
-  background: linear-gradient(to right, var(--violet) 20%, var(--violet) 40%, var(--violet) 100%);
+  background: linear-gradient(
+    to right,
+    var(--violet) 20%,
+    var(--violet) 40%,
+    var(--violet) 100%
+  );
 }
 
 .header-logo {
@@ -143,7 +157,12 @@ li {
 
 /* Carousel */
 #carouselHeader {
-  background: linear-gradient(to right, var(--violet) 20%, var(--violet) 40%, var(--violet) 90%);
+  background: linear-gradient(
+    to right,
+    var(--violet) 20%,
+    var(--violet) 40%,
+    var(--violet) 90%
+  );
   padding: 45px 0 145px;
 }
 
@@ -164,7 +183,6 @@ li {
 #carouselHeader .carousel-item .item-right {
   width: 585px;
   height: var(--item-carousel-header);
-
 }
 
 #carouselHeader .carousel-item .item-right img {
@@ -192,7 +210,6 @@ li {
   background-color: var(--blue-light);
   border-radius: 50%;
 }
-
 
 @keyframes up-down-img {
   0% {
@@ -244,4 +261,20 @@ li {
 .our-services .services-bottom {
   display: flex;
   justify-content: center;
+}
+/* about us */
+.about-us-container {
+  background-color: var(--violet-dark);
+}
+.about-us {
+  color: var(--white);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.about-us .left-img {
+  max-width: 555px;
+  object-fit: cover;
+}
+.about-us .right-content {
+  margin: auto 0 ;
 }
