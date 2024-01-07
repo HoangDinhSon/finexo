@@ -1,0 +1,38 @@
+/* make donut component like avatar */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    background-color: red;
+    overflow: hidden;
+}
+
+.avatar .avatar-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.my-25px {
+    margin: 25px 0;
+}
+
+.px-25px {
+    padding: 0 25px;
+}
+
+.px-45px {
+    padding: 0 45px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+.text-first {
+    color:  var(--blue-light);
+}

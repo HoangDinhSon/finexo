@@ -1,6 +1,8 @@
+@import url("class-reuse.css");
+
 :root {
   --violet: #231a6f;
-  --violet-dark: #00204a;
+  --bg-primary: #00204a;
   --blue: #007bff;
   --blue-light: #00bbf0;
   --indigo: #6610f2;
@@ -112,9 +114,6 @@ li {
   color: var(--blue-light);
 }
 
-.flex {
-  display: flex;
-}
 
 .text-center {
   text-align: center;
@@ -269,7 +268,7 @@ li {
 
 /* about us */
 .about-us-container {
-  background-color: var(--violet-dark);
+  background-color: var(--bg-primary);
 }
 
 .about-us {
@@ -302,8 +301,6 @@ li {
   margin: 0 auto;
 }
 
-.why-choose .item .circle {}
-
 .why-choose .circle::after {
   content: '';
   position: absolute;
@@ -322,4 +319,33 @@ li {
   left: 50%;
   translate: -50% -50%;
   z-index: 2;
+}
+
+/*  Our Team */
+.our-team-container {
+  background-color: var(--bg-primary);
+  color: var(--white);
+
+}
+
+.our-team {
+  padding: 0 15px;
+}
+
+.our-team .box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.our-team .item {
+  background: linear-gradient(to bottom, #002759, #002b64);
+  margin: 0 15px;
+  width: 100%;
+  padding: 35px 0 20px;
+}
+
+.our-team .item .list-logo img {
+  height: 22px;
+  object-fit: cover;
 }
