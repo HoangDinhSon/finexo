@@ -17,6 +17,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --gray-light: #00000026;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -78,9 +79,6 @@ li {
   margin-bottom: 8px;
 }
 
-.mb-40px {
-  margin-bottom: 40px;
-}
 
 .mt-45px {
   margin-top: 45px;
@@ -348,4 +346,42 @@ li {
 .our-team .item .list-logo img {
   height: 22px;
   object-fit: cover;
+}
+
+/* our customers */
+.our-customers {
+  padding: 90px 0;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.our-customers .box {
+  display: flex;
+  justify-content: center;
+}
+
+.our-customers .box-item {
+  padding: 50px 25px 25px;
+  position: relative;
+}
+
+.our-customers .box-item .customer-avatar {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.our-customers .box-item .customer-detail {
+  box-shadow: 0px 0px 15px 0px var(--gray-light);
+  padding: 75px 25px 25px;
+}
+
+.our-customers .box-item .customer-paragrh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-customers .control-btn {
+  display: flex;
+  justify-content: center;
 }
